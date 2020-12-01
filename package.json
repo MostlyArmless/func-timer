@@ -1,0 +1,32 @@
+{
+  "name": "func-timer",
+  "version": "0.1.0",
+  "description": "Measure the execution time of a given function in Node.js, with arguments. Supports async functions.",
+  "main": "./build/src/main.js",
+  "bin": {
+    "func-timer": "./build/src/main.js"
+  },
+  "scripts": {
+    "start": "node ./build/src/main.js",
+    "test": "mocha ./build/test/*.spec.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "keywords": [],
+  "author": "Mike",
+  "license": "MIT",
+  "dependencies": {},
+  "devDependencies": {
+    "@types/chai": "^4.1.7",
+    "@types/mocha": "^5.2.5",
+    "@types/node": "^10.12.19",
+    "chai": "^4.2.0",
+    "chai-as-promised": "^7.1.1",
+    "chai-string": "^1.5.0",
+    "mocha": "^5.2.0",
+    "ts-node": "^8.0.2",
+    "typescript": "^3.3.3"
+  }
+}
