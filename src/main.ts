@@ -1,10 +1,4 @@
-export interface ExecutionTimerResult
-{
-    runtimeSeconds: number;
-    functionOutput: any;
-}
-
-export async function measureExecutionTime( func: Function, args?: any[], numIterations?: number ): Promise<ExecutionTimerResult>
+export async function measureExecutionTime( func: Function, args?: any[], numIterations?: number )
 {
     let functionRetVal;
     const isAsync = func.constructor.name === 'AsyncFunction';
